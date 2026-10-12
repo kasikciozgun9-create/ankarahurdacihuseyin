@@ -97,6 +97,18 @@ section[id]{scroll-margin-top:80px}
 .scrap__item figcaption strong{display:block;font:800 1.25rem/1.15 var(--head)}
 .scrap__item figcaption span{font-size:.92rem;color:#d9dce1}
 .scrap__item--wide{grid-column:span 2;aspect-ratio:auto}
+.scrap__tile{background:var(--graphite);color:#fff;display:flex;flex-direction:column;justify-content:flex-end;gap:6px;padding:22px;text-decoration:none}
+.scrap__tile .ic{width:58px;height:58px;padding:13px;border-radius:12px;background:var(--brick);color:#fff;margin-bottom:auto}
+.scrap__tile strong{font:800 1.25rem/1.15 var(--head)}
+.scrap__tile span{font-size:.92rem;color:#c9ced5}
+.scrap__tile--brick{background:var(--brick)}
+.scrap__tile--brick .ic{background:rgba(255,255,255,.16)}
+.scrap__tile--brick span{color:#fde3dc}
+.scrap__tile--cta{background:var(--paper);color:var(--ink);border:2px dashed var(--line)}
+.scrap__tile--cta .ic{background:var(--wa)}
+.scrap__tile--cta span{color:var(--muted)}
+.scrap__tile--cta em{font-style:normal;font-weight:700;color:var(--wa);margin-top:6px}
+.scrap__tile--cta:hover{border-color:var(--wa)}
 .scrap-note{margin-top:22px;display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;background:var(--paper);border:1px solid var(--line);border-left:5px solid var(--brick);border-radius:12px;padding:18px 20px}
 .scrap-note p{margin:0 auto 0 0;font-weight:600}
 
