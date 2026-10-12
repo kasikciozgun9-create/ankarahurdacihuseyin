@@ -217,6 +217,9 @@ section[id]{scroll-margin-top:80px}
   .footer .container>div:first-child{grid-column:1/-1}
   .dock{display:flex}
   .strip .hide-sm{display:none}
+  .strip .container{flex-wrap:nowrap}
+  .strip .container>span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+  .strip a{white-space:nowrap}
 }
 @media (max-width:600px){
   body{font-size:16px}
