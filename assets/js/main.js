@@ -24,22 +24,6 @@
     el.textContent = new Date().getFullYear();
   });
 
-  // Görünür olunca belirme
-  var revealEls = document.querySelectorAll('.reveal');
-  if ('IntersectionObserver' in window) {
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-in');
-          io.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-    revealEls.forEach(function (el) { io.observe(el); });
-  } else {
-    revealEls.forEach(function (el) { el.classList.add('is-in'); });
-  }
-
   // Gerçek etkileşim izi: AntiClick sunucusundaki "sahte arama" kuralıyla aynı ölçüt
   // (en az 3 sn sayfada kalma + fare/dokunma/kaydırma/klavye etkileşimi).
   var loadedAt = Date.now();
