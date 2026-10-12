@@ -49,6 +49,9 @@ section[id]{scroll-margin-top:80px}
 .header{position:sticky;top:0;z-index:50;background:rgba(255,253,249,.94);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
 .header .container{display:flex;align-items:center;gap:20px;min-height:70px}
 .brand{display:flex;align-items:center;gap:11px;text-decoration:none;margin-right:auto}
+.brand__logo{display:block;height:50px;width:auto}
+.brand__badge{display:inline-block;background:#fff;border-radius:12px;padding:10px 14px}
+.brand__logo--foot{height:48px}
 .brand__mark{width:44px;height:44px;border-radius:10px;background:var(--graphite);color:#fff;display:grid;place-items:center;font:800 1.4rem/1 var(--head);border-bottom:4px solid var(--brick)}
 .brand__text{display:flex;flex-direction:column;line-height:1.05}
 .brand__text strong{font:800 1.25rem/1 var(--head);letter-spacing:-.02em}
@@ -242,6 +245,6 @@ section[id]{scroll-margin-top:80px}
   .form{padding:22px}
   .form__row{grid-template-columns:1fr;gap:0}
   .hero__actions .btn{flex:1 1 100%}
-  .brand__text small{display:none}
+  .brand__logo{height:42px}
   .footer .container{grid-template-columns:1fr}
 }
